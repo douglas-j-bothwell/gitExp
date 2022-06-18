@@ -1,6 +1,7 @@
 inputSet:
   identifier: "triggertargetbranch"
   name: "trigger-target-branch"
+  tags: {}
   orgIdentifier: "default"
   projectIdentifier: "dougproject"
   pipeline:
@@ -9,5 +10,6 @@ inputSet:
       ci:
         codebase:
           build:
+            type: "branch"
             spec:
               branch: "<+trigger.targetBranch>"
