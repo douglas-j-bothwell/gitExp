@@ -35,12 +35,3 @@ pipeline:
                                     repo: dbothwell/myfrontendservice
                                     tags:
                                         - push-to-private-latest
-                          - step:
-                                type: Run
-                                name: echo-hello-world
-                                identifier: echohelloworld
-                                spec:
-                                    connectorRef: dbothwelldockerhub
-                                    image: alpine/latest
-                                    shell: Sh
-                                    command: echo "hello-world"
