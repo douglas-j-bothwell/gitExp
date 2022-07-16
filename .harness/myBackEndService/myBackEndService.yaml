@@ -24,6 +24,7 @@ pipeline:
                           namespace: harness-delegate-ng
                           automountServiceAccountToken: true
                           nodeSelector: {}
+                          os: Linux
                   execution:
                       steps:
                           - step:
@@ -34,4 +35,4 @@ pipeline:
                                     connectorRef: dbothwelldockerhub
                                     repo: dbothwell/mybackendservice
                                     tags:
-                                        - latest
+                                        - mbe-latest
