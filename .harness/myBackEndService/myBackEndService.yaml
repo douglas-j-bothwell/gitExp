@@ -8,7 +8,7 @@ pipeline:
         ci:
             codebase:
                 connectorRef: douglasjbothwellgithub
-                repoName: myBackEndService
+                repoName: codebaseBeta
                 build: <+input>
     stages:
         - stage:
